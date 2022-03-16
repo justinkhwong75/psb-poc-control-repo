@@ -5,9 +5,9 @@ class profile::platform::baseline (
 ){
 
   # Global
-  class {'::time':
-    servers => $timeservers,
-  }
+  #class {'::time':
+  #  servers => $timeservers,
+  #}
 
   class {'::profile::puppet::orch_agent':
     ensure => $orch_agent,
